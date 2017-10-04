@@ -1,5 +1,3 @@
-
-
 // Au click sur le bouton, afficher la barre de recherche
 
 let div1=document.getElementById('work1');
@@ -12,27 +10,46 @@ div3.onclick= function() {
 }
 
 
+
+
 //Renvoyer vers une recherche google lorsque l'on appuie sur le bouton recherche
 
 let boutonRecherche=document.getElementById('boutonR')
 
 boutonRecherche.onclick= function(){
   var x = document.forms["barrederecherche"].elements["Rechercher"];
-  //var x = document.getElementById('text');
   var y= x.value;
 
-  alert(y);
   var arrayOfStrings = y.split(" ");
   
   var z=""
   for (var i in arrayOfStrings)
     z=z+"+"+arrayOfStrings[i];
+    z=z.substring(1);
 
-alert(z);
   window.location.href = 'https://www.google.fr/#q='+z;
 }
 
-/* work1.style.display='none'
+
+
+// FAIRE UN POP UP QUI APPARAIT AU BOUT DE 10 SECONDE VERS UN SITE XXX
+
+
+onLoad=setTimeout('popuper()',1000)
+
+var popuper = function(){
+alert("Marche pas");
+pub = window.open('popup.html','Meilleur site ever',
+'height=200, width=400, top=300, left=500, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=no, status=no, directories=no');
+}
+
+
+
+
+
+
+/*
+ work1.style.display='none'
 work2.style.display='block'
 
 var basculeSection = function () {
