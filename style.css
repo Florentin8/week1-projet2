@@ -67,7 +67,7 @@ text-decoration: none;
 }
 
 /*  définir la taille de la barre de recherche*/
-.champ
+#text
 {
 	text-align:center;
 	width: 50em;

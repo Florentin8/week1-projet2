@@ -15,8 +15,16 @@ div3.onclick= function() {
 }
 
 
+//Renvoyer vers une recherche google lorsque l'on appuie sur le bouton recherche
 
+let boutonRecherche=document.getElementById('boutonR')
 
+boutonRecherche.onclick= function(){
+  alert("hohoho");
+  var x = document.forms["barrederecherche"].elements["Rechercher"];
+  //var x = document.getElementById('text');
+  alert(x.value);
+}
 
 /* work1.style.display='none'
 work2.style.display='block'
