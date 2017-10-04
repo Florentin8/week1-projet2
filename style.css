@@ -25,14 +25,39 @@ header ul{
 
 
 
-/*  LE MILIEU DE PAGE */
+/*  LE MILIEU DE PAGE V2*/
+#work2
+{
+	text-align:center;
+	margin-top: 25%;
+}
 
+.BCstyle
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align:center;
+background-color: #FFF;
+background-color: rgb(247,247,247);
+padding-right: 2em;
+padding-left: 2em;
+padding-top: 1em;
+padding-bottom: 1em;
+color:rgb(130,130,130);
+text-decoration: none;
+}
+
+/*  LE MILIEU DE PAGE V1*/
 /*  centrer l'image google */
 .google
 {
 	text-align:center;
 	margin-top: 14%;
 }
+
+/*  centrer le bouton principal */
+
 
 /*  centrer la barre de recherche */
 .barre
