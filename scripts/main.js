@@ -2,14 +2,11 @@
 
 // Au click sur le bouton, afficher la barre de recherche
 
-alert('Salut toi')
-
 let div1=document.getElementById('work1');
 let div2=document.getElementById('work2');
 let div3=document.getElementById('BC');
 
 div3.onclick= function() {
-  alert("hohoho");
   div1.style.display="block";
   div2.style.display="none";
 }
@@ -20,10 +17,19 @@ div3.onclick= function() {
 let boutonRecherche=document.getElementById('boutonR')
 
 boutonRecherche.onclick= function(){
-  alert("hohoho");
   var x = document.forms["barrederecherche"].elements["Rechercher"];
   //var x = document.getElementById('text');
-  alert(x.value);
+  var y= x.value;
+
+  alert(y);
+  var arrayOfStrings = y.split(" ");
+  
+  var z=""
+  for (var i in arrayOfStrings)
+    z=z+"+"+arrayOfStrings[i];
+
+alert(z);
+  window.location.href = 'https://www.google.fr/#q='+z;
 }
 
 /* work1.style.display='none'
