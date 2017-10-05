@@ -17,11 +17,31 @@ header ul{
 
 
 
+/* LES GRILLES */
 
 
+#espacegrille {
+	width: 40em;
+	height: 40em;
+	background-color: ;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6%;
+}
 
+/*Définir la taille du tableau */
 
+.tableau
+{
+	width: 40em;
+	height: 40em;
+}
 
+/* La bordure des cellules des lignes de la grille sont en noir */
+.black_border
+{
+background-color: rgb(235,235,235);
+}
 
 
 

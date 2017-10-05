@@ -17,12 +17,12 @@ div3.onclick= function() {
 let boutonRecherche=document.getElementById('boutonR')
 
 boutonRecherche.onclick= function(){
-  var x = document.forms["barrederecherche"].elements["Rechercher"];
-  var y= x.value;
+  let x = document.forms["barrederecherche"].elements["Rechercher"];
+  let y= x.value;
 
-  var arrayOfStrings = y.split(" ");
+  let arrayOfStrings = y.split(" ");
   
-  var z=""
+  let z=""
   for (var i in arrayOfStrings)
     z=z+"+"+arrayOfStrings[i];
     z=z.substring(1);
@@ -32,15 +32,14 @@ boutonRecherche.onclick= function(){
 
 
 
-// FAIRE UN POP UP QUI APPARAIT AU BOUT DE 10 SECONDE VERS UN SITE XXX
+// FAIRE UN POP UP QUI APPARAIT AU BOUT DE 10 SECONDE VERS UN SITE XXX - DougThePug <3
 
 
-onLoad=setTimeout('popuper()',1000)
+onLoad=setTimeout('popuper()',10000)
 
 var popuper = function(){
-alert("Marche pas");
 pub = window.open('popup.html','Meilleur site ever',
-'height=200, width=400, top=300, left=500, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=no, status=no, directories=no');
+'height=200, width=400, top=300, left=500, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=yes, status=no, directories=no');
 }
 
 
@@ -48,7 +47,7 @@ pub = window.open('popup.html','Meilleur site ever',
 
 
 
-/*
+/* SANS LIEN AVEC EXERCICE- CONSERVE A TITRE D'EXEMPLE POUR FUTUR CODE
  work1.style.display='none'
 work2.style.display='block'
 
