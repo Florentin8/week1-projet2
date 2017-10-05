@@ -22,7 +22,6 @@ var gen_grille = function () {
 	//Récupération du format rentré dans un promt
 	let texte = prompt("Please enter the dimensions of the desired grid in the format '7 x 7'. Max size=9" , "5 x 5");
 	let x = test(texte);
-	alert(x);
 
 	//Construction de la grille avec une double boucle for, une pour les lignes et une seconde pour remplir les lignes
 	let html= "<table class='tableau'><tbody>"; 
